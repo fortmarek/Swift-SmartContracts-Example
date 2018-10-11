@@ -1,41 +1,41 @@
 PODS:
   - BigInt (3.1.0):
     - SipHash (~> 1.2)
-  - ContractCodegen (0.0.5):
-    - EtherKit
+  - ContractCodegen (0.1):
+    - EtherKit (~> 0.2.0)
     - ReactiveSwift (~> 4.0)
   - CryptoSwift (0.12.0)
-  - EtherKit (0.2.0-beta1):
-    - EtherKit/Core (= 0.2.0-beta1)
-    - EtherKit/PromiseKit (= 0.2.0-beta1)
-  - EtherKit/Core (0.2.0-beta1):
+  - EtherKit (0.2.0):
+    - EtherKit/Core (= 0.2.0)
+    - EtherKit/PromiseKit (= 0.2.0)
+  - EtherKit/Core (0.2.0):
     - BigInt
     - CryptoSwift
     - Marshal
     - Result (~> 4.0.0)
     - secp256k1.swift
     - Starscream
-  - EtherKit/PromiseKit (0.2.0-beta1):
+  - EtherKit/PromiseKit (0.2.0):
     - EtherKit/Core
     - PromiseKit/CorePromise
   - Marshal (1.2.7)
-  - PromiseKit/CorePromise (6.4.1)
+  - PromiseKit/CorePromise (6.5.2)
   - ReactiveSwift (4.0.0):
     - Result (~> 4.0)
   - Result (4.0.0)
   - secp256k1.swift (0.1.4)
   - SipHash (1.2.2)
-  - Starscream (3.0.5)
+  - Starscream (3.0.6)
 
 DEPENDENCIES:
-  - ContractCodegen
-  - "EtherKit (from `git@github.com:fortmarek/EtherKit.git`, commit `4bc8e5caecfdd6c6196a0d8c8ead6f99782cde4e`)"
+  - ContractCodegen (~> 0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BigInt
     - ContractCodegen
     - CryptoSwift
+    - EtherKit
     - Marshal
     - PromiseKit
     - ReactiveSwift
@@ -44,29 +44,19 @@ SPEC REPOS:
     - SipHash
     - Starscream
 
-EXTERNAL SOURCES:
-  EtherKit:
-    :commit: 4bc8e5caecfdd6c6196a0d8c8ead6f99782cde4e
-    :git: "git@github.com:fortmarek/EtherKit.git"
-
-CHECKOUT OPTIONS:
-  EtherKit:
-    :commit: 4bc8e5caecfdd6c6196a0d8c8ead6f99782cde4e
-    :git: "git@github.com:fortmarek/EtherKit.git"
-
 SPEC CHECKSUMS:
   BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
-  ContractCodegen: a4af9e484d1d4470dc0b2a52dad70e7d12d5bc1e
+  ContractCodegen: 3cf0f6d27309cc20a2ff1decef389e62b035868d
   CryptoSwift: 1c07ca50843dd48bc54e6ea53d7a4dba3b645716
-  EtherKit: c4be7111c5042e886643e2f98c51f55634fc5f3b
+  EtherKit: 17dc49304b1841a141666ea2c20a733ef8d66d25
   Marshal: ef480864a6af10a63f67be7e55bb5d8fe67a16d9
-  PromiseKit: 4c76a6506638034e3d7bede97b2ff7743f7bd2dc
+  PromiseKit: 27c1601bfb73405871b805bcb8cf7e55c4dad3db
   ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
   secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
   SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
-  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
 
-PODFILE CHECKSUM: 553ea221e14b13206f6aa34ef5f335a034c67131
+PODFILE CHECKSUM: 769cce57524ee9e1e8d8a3c4fa0d50876fda6a43
 
 COCOAPODS: 1.5.3
